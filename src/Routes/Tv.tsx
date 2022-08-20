@@ -1,8 +1,6 @@
 function Tv() {
   return (
-    <div>
-      <h1>Tv</h1>
-    </div>
+    <div style={{ backgroundColor: "whitesmoke", height: "200vh" }}>tv</div>
   );
 }
 
