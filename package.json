@@ -47,6 +47,7 @@
       "react-app/jest"
     ]
   },
+  "homepage": "https://tinubee.github.io/netflix-clone",
   "browserslist": {
     "production": [
       ">0.2%",
