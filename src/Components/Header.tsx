@@ -56,6 +56,7 @@ const Search = styled.form`
   display: flex;
   align-items: center;
   position: relative;
+  cursor: pointer;
   svg {
     height: 25px;
   }
@@ -115,6 +116,7 @@ function Header() {
   const [searchOpen, setSearchOpen] = useState(false);
   const homeMatch = useRouteMatch("/");
   const tvMatch = useRouteMatch("/tv");
+  const searchMatch = useRouteMatch("/search");
   const inputAnimation = useAnimation();
   const navAnimation = useAnimation();
   const { scrollY } = useViewportScroll();
@@ -167,6 +169,11 @@ function Header() {
           <Item>
             <Link to="/tv">
               Tv Shows {tvMatch && <Circle layoutId="circle" />}
+            </Link>
+          </Item>
+          <Item>
+            <Link to="/search">
+              Search {searchMatch && <Circle layoutId="circle" />}
             </Link>
           </Item>
         </Items>
